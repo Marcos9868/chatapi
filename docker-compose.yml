@@ -1,0 +1,8 @@
+services:
+  chat-app:
+    build: .
+    ports:
+      - "5000:80"
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=your_postgresql_connection_string
